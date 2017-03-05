@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/league.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+  <!-- Add partials page here. The `role="slide"` is required. -->
+  <!-- The order of the list is here is important. -->
+  <link rel="import" href="./partials/01-intro.html"   role="slide">
+  <link rel="import" href="./partials/02-example.html" role="slide">
+
+  <title>Title of the presentation</title>
+</head>
+<body>
+  <div class="reveal">
+    <!-- Partials page will be appended in that container -->
+    <div class="slides" id="slides">
+    </div>
+  </div>
+
+  <!-- This script can be required for some ReavelJS plugins...
+  <script src="lib/js/head.min.js"></script>
+  -->
+  <script src="js/reveal.js"></script>
+  <!--
+    HTML Imports polyfill, in case the browser does not support it natively.
+    cf. http://caniuse.com/#feat=imports
+  -->
+  <script src="lib/js/HTMLImports.min.js"></script>
+  <script src="js/presentation.js"></script>
+  <script>
+    // RevealJS configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      slideNumber: true,
+      transition: 'convex'
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "multifiles-revealjs-presentation",
+  "version": "1.0.0",
+  "description": "A multifiles RevealJS presentation",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linsolas/multifiles-revealjs-presentation.git"
+  },
+  "keywords": [
+    "revealjs"
+  ],
+  "author": "Romain Linsolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linsolas/multifiles-revealjs-presentation/issues"
+  },
+  "homepage": "https://github.com/linsolas/multifiles-revealjs-presentation#readme",
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "live-server": "^1.2.0",
+    "reveal.js": "^3.4.1",
+    "webcomponents.js": "^0.7.24"
+  }
+}
