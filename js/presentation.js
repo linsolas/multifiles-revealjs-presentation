@@ -29,6 +29,8 @@
         }
       }
     }
+    // Initialize RevealJS
+    initializeReveal();
   }
 
   function activate() {
@@ -36,6 +38,9 @@
       console.log('HTML Import supported!');
     } else {
       console.log('HTML Import not supported!');
+      window.addEventListener('HTMLImportsLoaded', function(e) {
+        importPartials();
+      });
       return;
     }
 

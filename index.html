@@ -23,22 +23,25 @@
   <script src="lib/js/head.min.js"></script>
   -->
   <script src="js/reveal.js"></script>
+  <script>
+    function initializeReveal() {
+      // RevealJS configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+        transition: 'convex'
+      });
+    }
+  </script>
   <!--
     HTML Imports polyfill, in case the browser does not support it natively.
     cf. http://caniuse.com/#feat=imports
   -->
-  <script src="lib/js/HTMLImports.min.js"></script>
+  <script src="lib/js/webcomponents-lite.js"></script>
   <script src="js/presentation.js"></script>
-  <script>
-    // RevealJS configuration
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      history: true,
-      center: true,
-      slideNumber: true,
-      transition: 'convex'
-    });
-  </script>
+
 </body>
 </html>
